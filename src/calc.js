@@ -1,9 +1,9 @@
 /**
- * 
- * @param {*} num1 
- * @param {*} num2 
- * @param {*} operator 
- * @returns 
+ * Calculus function. Can do addition, mutiplication & division. Goes like num1 operator num2.
+ * @param {*} num1 must be a number or a float
+ * @param {*} num2 must be a number or a float
+ * @param {*} operator must be "add" or "mult" or "div"
+ * @returns number, float or string
  */
 const calc = (num1, num2, operator) => {
   if(num1 && num2 && operator){

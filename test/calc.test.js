@@ -2,6 +2,7 @@ const expect = require('chai').expect;
 const {calc} = require('../src/calc');
 
 describe("Calc", () => {
+  
     it("Should return 'Error!' if operator name isn't mult / add / div", () => {
       expect(calc(69, "tsouintsouin")).to.equal("Error!");
     });
