@@ -14,4 +14,7 @@ describe("Calc", () => {
     it("Should return 'Error in the operator name!' if operator name isn't mult / add / div", () => {
       expect(calc(69, 420, "tsouintsouin")).to.equal("Error in the operator name!");
     });
+    it("handles empty answers", () => {
+      expect(calc()).to.contain('Error!');
+    });
 })
