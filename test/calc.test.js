@@ -5,6 +5,9 @@ describe("Calc", () => {
     it("Should return 'Error!' if operator name isn't mult / add / div", () => {
       expect(calc(69, "tsouintsouin")).to.equal("Error!");
     });
+    it("Should return 'Error!' if num1 isn't a number or a float", () => {
+      expect(calc(69, "tsouintsouin")).to.equal("Error!");
+    });
     it("Handles the lack of parameter", () => {
       expect(calc(2, "add")).to.contain('Error!');
     });
