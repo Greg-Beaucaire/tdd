@@ -1,5 +1,5 @@
 const fizzbuzz = (num) => {
-    return (num % 5 == 0 ? "buzz" : (num % 7 == 0?"fizz":""));
+    return (num ? num % 5 == 0 ? num % 7 ==0 ? "fizzbuzz" : "buzz" : (num % 7 == 0?"fizz":"") :"Error!");
 }
 
 exports.fizzbuzz = fizzbuzz;
