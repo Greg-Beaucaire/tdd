@@ -13,7 +13,7 @@ describe("Calc", () => {
       expect(calc(69, "pouet", "add")).to.equal("Error!");
     });
     it("Handles the lack of parameter", () => {
-      expect(calc(2, "add")).to.contain('Error!');
+      expect(calc(2, "add")).to.equal('Error!');
     });
     it("Addition | Integer : should return 9 by adding 3 to 6", () => {
       expect(calc(3, 6, "add")).to.equal(9);
