@@ -1,13 +1,13 @@
 const calc = (num1, num2, operator) => {
 
   if(operator == 'add'){
-    return num1 + num2
+    return parseFloat((num1 + num2).toFixed(10))
   }
   if(operator == 'mult'){
-    return num1 * num2
+    return parseFloat((num1 * num2).toFixed(10))
   }
   if(operator == 'div'){
-    return num1 / num2
+    return parseFloat((num1 / num2).toFixed(10))
   }
   if(!num1 || !num2 || !operator){
     return "Error!"
