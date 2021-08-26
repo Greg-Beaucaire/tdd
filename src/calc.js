@@ -8,7 +8,7 @@
 const calc = (num1, num2, operator) => {
   if(num1 && num2 && operator){
     if(['add', 'mult', 'div'].includes(operator)){
-      if(typeof(num1) == 'number' || typeof(num1) == 'float'){
+      if((typeof(num1) == 'number' || typeof(num1) == 'float') && (typeof(num2) == 'number' || typeof(num2) == 'float')){
         if(operator == 'add'){
           return parseFloat((num1 + num2).toFixed(10))
         }
